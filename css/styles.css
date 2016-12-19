@@ -21,82 +21,69 @@ body {
 	box-shadow: inset 0 0 1px rgba(0,0,0,.6), 0 1px 0 rgba(255,255,255,.1);
   -webkit-transform: rotate(180deg);
 }
-.wrap2 {
 
+
+
+
+
+.knob-wrap {
   position: relative;
 	box-sizing: border-box;
 	margin: 70px auto;
 	// padding: 5px;
-	width: 200px;
-  height: 200px;
+	width: 250px;
+  height: 250px;
 	border-radius: 50%;
 	background: #222;
 	box-shadow: inset 0 0 1px rgba(0,0,0,.6), 0 1px 0 rgba(255,255,255,.1);
   -webkit-transform: rotate(230deg);
-
-}
- .circle {
-
-  position: absolute;
-   top: 10px;
-   left: 10px;
-   background: #222;
-   width: 150px;
-   height: 150px;
-   border-radius: 50%;
-   z-index: 900;
- }
-.prog-bar-osc1 {
-  position: absolute;
-  clip: rect(0px, 300px, 150px, 0px);
-  top: 15px;
-  left: 15px;
-	height: 100%;
-  width: 100%;
-	border-radius: 50%;
-	background: repeating-linear-gradient(-45deg, rgba(255,255,255,.1), rgba(255,255,255,0) 12px), linear-gradient(#63D0FF, #45fe16);
-  -webkit-animation: dial-osc1 4s infinite;
-
-
 }
 
-.wrapper {
-  width: 100px; /* Set the size of the progress bar */
+.knob {
+  width: 200px;
+  height: 200px;
+  background: #eee;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  margin: 50px;
+  display: inline-block;
+}
+.knob:after, .knob:before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+
+.knob {
+ background: -webkit-repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(#63D0FF, #45fe16);
+  border: 4px solid #FF69B4;
+}
+.knob:after {
+  width: 30px;
   height: 100px;
-  position: absolute; /* Enable clipping */
-  clip: rect(0px, 100px, 100px, 50px); /* Hide half of the progress bar */
-}
-/* Set the sizes of the elements that make up the progress bar */
-.circle {
-  background: #222;
-  width: 80px;
-  height: 80px;
-  /*border-radius: 50px;*/
+  background: #eee;
+  border-radius: 20px;
   position: absolute;
-  clip: rect(0px, 50px, 100px, 0px);
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  -webkit-transform-origin: top center;
+  -webkit-animation: spin 2s linear infinite;
 }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@-webkit-keyframes dial-osc1 {
-
-  0% {height: 70%;}
-  100% {height: 90%;}
-    0% {width: 70%;}
-  100% {width: 90%;}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(170deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
 }
 
 
