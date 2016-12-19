@@ -30,13 +30,12 @@ body {
   position: relative;
 	box-sizing: border-box;
 	margin: 70px auto;
-	// padding: 5px;
+	padding: 5px;
 	width: 250px;
   height: 250px;
 	border-radius: 50%;
 	background: #222;
 	box-shadow: inset 0 0 1px rgba(0,0,0,.6), 0 1px 0 rgba(255,255,255,.1);
-  -webkit-transform: rotate(230deg);
 }
 
 .knob {
@@ -45,7 +44,8 @@ body {
   background: #eee;
   border-radius: 50%;
   position: absolute;
-  top: 5px;
+  top: -30px;
+  left: -30px;
   margin: 50px;
   display: inline-block;
 }
@@ -87,11 +87,25 @@ body {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .prog-bar-attack {
 	height: 300px;
   width: 60px;
 	border-radius: 5px;
   border: 1px solid #FF69B4;
+
 
 	background: repeating-linear-gradient(-45deg, rgba(255,255,255,.1), rgba(255,255,255,0) 12px), linear-gradient(#63D0FF, #45fe16);
   -webkit-animation: slide-attack 4s infinite;
