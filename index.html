@@ -1,57 +1,67 @@
 <html>
   <head>
-	  <title>CSS Animations</title>
-
+	   <title>CSS Animations</title>
 	  <link rel="stylesheet" href="css/styles.css">
   </head>
   <body>
-    <h1>Select a Sound</h1>
-    <select name="sounds">
-      <option value="empty"></option>
-      <option value="bass">Bass</option>
-      <option value="kick">Kick</option>
-      <option value="strings">String</option>
-      <option value="snare">Snare</option>
-    </select>
-    <div class ="container">
 
-     <div class ="parameter">
-      <h1>ATTACK</h1>
-	    <div class="wrap">
-		    <div class="prog-bar-attack"></div>
-      </div>
-     </div>
-      <div class ="parameter">
-      <h1>DECAY</h1>
-	    <div class="wrap">
-		    <div class="prog-bar-decay"></div>
-      </div>
-     </div>
-      <div class ="parameter">
-      <h1>SUSTAIN</h1>
-	    <div class="wrap">
-		    <div class="prog-bar-sustain"></div>
-      </div>
-     </div>
-     <div class ="parameter">
-      <h1>RELEASE</h1>
-	    <div class="wrap">
-		    <div class="prog-bar-release"></div>
-      </div>
-     </div>
-      <div class ="parameter">
-        <div class="knob-wrap">
-          <div class="knob"></div>
+   <div class="nav">
+     <h1>Select a Sound</h1>
+     <select name="sounds">
+       <option value="empty"></option>
+       <option value="bass">Bass</option>
+       <option value="kick">Kick</option>
+       <option value="strings">String</option>
+       <option value="snare">Snare</option>
+     </select>
+    </div>
+
+    <div class="container">
+
+      <div class="ADSR">
+        <div class="parameter">
+          <h1>ATTACK</h1>
+	        <div class="slider-wrap">
+		        <div class="prog-bar-attack"></div>
+          </div>
         </div>
-       <h1>OSC 1</h1>
-      </div>
-      <div class ="parameter">
-        <div class="knob-wrap">
-          <div class="knob"></div>
+        <div class="parameter">
+          <h1>DECAY</h1>
+	        <div class="slider-wrap">
+		        <div class="prog-bar-decay"></div>
+          </div>
         </div>
-       <h1>OSC 2</h1>
+        <div class="parameter">
+          <h1>SUSTAIN</h1>
+	        <div class="slider-wrap">
+		        <div class="prog-bar-sustain"></div>
+          </div>
+        </div>
+        <div class="parameter">
+          <h1>RELEASE</h1>
+	        <div class="slider-wrap">
+		        <div class="prog-bar-release"></div>
+          </div>
+        </div>
       </div>
-     </div>
+
+      <div class="oscillators">
+        <div class="parameter">
+          <div class="knob-wrap">
+            <div class="knob"></div>
+          </div>
+          <h1>OSC 1</h1>
+        </div>
+        <div class="parameter">
+          <div class="knob-wrap">
+            <div class="knob2"></div>
+          </div>
+          <h1>OSC 2</h1>
+        </div>
+      </div>
+
+
+
     </div>
   </body>
 </html>
