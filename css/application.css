@@ -13,6 +13,11 @@ body {
 h1 {
   text-align: center; }
 
+.spinner-wrap{
+  width: 100px;
+  height: 100px;
+  background-color:blue;
+}
 .paramname {
   margin: 40px;
   letter-spacing: 0.5em; }
@@ -68,7 +73,7 @@ h1 {
 
 .osc1:after {
   width: 30px;
-  height: 100px;
+  height: 120px;
   background: #eee;
   border-radius: 20px;
   position: absolute;
@@ -76,7 +81,7 @@ h1 {
   left: 50%;
   margin-left: -15px;
   -webkit-transform-origin: top center;
-  -webkit-animation: spin-osc1 2s linear infinite; }
+  -webkit-animation: spin-osc1 2s linear forwards; }
 
 @-webkit-keyframes spin-osc1 {
   0% {
@@ -85,7 +90,7 @@ h1 {
     -webkit-transform: rotate(300deg); } }
 .osc2:after {
   width: 30px;
-  height: 100px;
+  height: 120px;
   background: #eee;
   border-radius: 20px;
   position: absolute;
@@ -93,7 +98,7 @@ h1 {
   left: 50%;
   margin-left: -15px;
   -webkit-transform-origin: top center;
-  -webkit-animation: spin2 2s linear infinite; }
+  -webkit-animation: spin2 2s linear forwards; }
 
 @-webkit-keyframes spin2 {
   0% {
@@ -102,7 +107,7 @@ h1 {
     -webkit-transform: rotate(220deg); } }
 .frequency:after {
   width: 30px;
-  height: 100px;
+  height: 120px;
   background: #eee;
   border-radius: 20px;
   position: absolute;
@@ -110,7 +115,7 @@ h1 {
   left: 50%;
   margin-left: -15px;
   -webkit-transform-origin: top center;
-  -webkit-animation: spin-frequency 2s linear infinite; }
+  -webkit-animation: spin-frequency 2s linear forwards; }
 
 @-webkit-keyframes spin-frequency {
   0% {
@@ -119,7 +124,7 @@ h1 {
     -webkit-transform: rotate(150deg); } }
 .resonance:after {
   width: 30px;
-  height: 100px;
+  height: 120px;
   background: #eee;
   border-radius: 20px;
   position: absolute;
@@ -127,7 +132,7 @@ h1 {
   left: 50%;
   margin-left: -15px;
   -webkit-transform-origin: top center;
-  -webkit-animation: spin-resonance 2s linear infinite; }
+  -webkit-animation: spin-resonance 2s linear forwards; }
 
 @-webkit-keyframes spin-resonance {
   0% {
@@ -136,7 +141,7 @@ h1 {
     -webkit-transform: rotate(190deg); } }
 .amount:after {
   width: 30px;
-  height: 100px;
+  height: 120px;
   background: #eee;
   border-radius: 20px;
   position: absolute;
@@ -144,7 +149,7 @@ h1 {
   left: 50%;
   margin-left: -15px;
   -webkit-transform-origin: top center;
-  -webkit-animation: spin-amount 2s linear infinite; }
+  -webkit-animation: spin-amount 2s linear forwards; }
 
 @-webkit-keyframes spin-amount {
   0% {
@@ -153,7 +158,7 @@ h1 {
     -webkit-transform: rotate(150deg); } }
 .rate:after {
   width: 30px;
-  height: 100px;
+  height: 120px;
   background: #eee;
   border-radius: 20px;
   position: absolute;
@@ -161,7 +166,7 @@ h1 {
   left: 50%;
   margin-left: -15px;
   -webkit-transform-origin: top center;
-  -webkit-animation: spin-rate 2s linear infinite; }
+  -webkit-animation: spin-rate 2s linear forwards; }
 
 @-webkit-keyframes spin-rate {
   0% {
@@ -220,25 +225,24 @@ h1 {
   box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.6), 0 1px 0 rgba(255, 255, 255, 0.1);
   -webkit-transform: rotate(180deg); }
 
-.prog-bar {
+.slider-bar {
   height: 300px;
   width: 60px;
-  /*   margin-left: 0px; */
   border-radius: 5px;
   border: 1px solid #FF69B4;
   background: repeating-linear-gradient(-45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 12px), linear-gradient(#63D0FF, #45fe16); }
 
 .attack {
-  -webkit-animation: slide-attack 4s infinite; }
+  -webkit-animation: slide-attack 4s forwards; }
 
 .decay {
-  -webkit-animation: slide-decay 4s infinite; }
+  -webkit-animation: slide-decay 4s forwards; }
 
 .sustain {
-  -webkit-animation: slide-sustain 4s infinite; }
+  -webkit-animation: slide-sustain 4s forwards; }
 
 .release {
-  -webkit-animation: slide-release 4s infinite; }
+  -webkit-animation: slide-release 4s forwards; }
 
 @-webkit-keyframes slide-attack {
   0% {
@@ -260,38 +264,38 @@ h1 {
     height: 0%; }
   100% {
     height: 40%; } }
-.attack {
-  -webkit-animation: slide-attack 4s infinite; }
+.f-attack {
+  -webkit-animation: slide-f-attack 4s forwards; }
 
-.decay {
-  -webkit-animation: slide-decay 4s infinite; }
+.f-decay {
+  -webkit-animation: slide-f-decay 4s forwards; }
 
-.sustain {
-  -webkit-animation: slide-sustain 4s infinite; }
+.f-sustain {
+  -webkit-animation: slide-f-sustain 4s forwards; }
 
-.release {
-  -webkit-animation: slide-release 4s infinite; }
+.f-release {
+  -webkit-animation: slide-f-release 4s forwards; }
 
-@-webkit-keyframes slide-attack {
-  0% {
-    height: 0%; }
-  100% {
-    height: 30%; } }
-@-webkit-keyframes slide-decay {
+@-webkit-keyframes slide-f-attack {
   0% {
     height: 0%; }
   100% {
     height: 50%; } }
-@-webkit-keyframes slide-sustain {
+@-webkit-keyframes slide-f-decay {
   0% {
     height: 0%; }
   100% {
-    height: 80%; } }
-@-webkit-keyframes slide-release {
+    height: 70%; } }
+@-webkit-keyframes slide-f-sustain {
   0% {
     height: 0%; }
   100% {
-    height: 40%; } }
+    height: 10%; } }
+@-webkit-keyframes slide-f-release {
+  0% {
+    height: 0%; }
+  100% {
+    height: 50%; } }
 .container {
   display: flex;
   flex-direction: row;

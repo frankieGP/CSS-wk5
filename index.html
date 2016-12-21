@@ -1,23 +1,28 @@
 <html>
   <head>
 	   <title>CSS Animations</title>
+
 	  <link rel="stylesheet" href="css/application.css">
   </head>
   <body>
 
-   <div class="nav">
-     <h1>Select a Sound</h1>
-     <select name="sounds">
-       <option value="empty"></option>
-       <option value="bass">Bass</option>
-       <option value="kick">Kick</option>
-       <option value="strings">String</option>
-       <option value="snare">Snare</option>
-     </select>
-    </div>
+
 
     <div class="container">
 
+      <article class="player">
+
+      <div class="spinner-wrap">
+        <div class="spinner-outer"></div>
+        <div class="spinner-center"></div>
+        <div class="play-sprite"></div>
+      </div>
+
+      <audio loop="loop" data-bpm="86">
+        <source src="sounds/bass2.mp3" type="audio/mp3"/>
+      </audio>
+
+    </article>
       <div class="knobs">
         <h1 class="paramname">OSCILLATORS</h1>
         <div class="parameter">
@@ -66,25 +71,25 @@
         <h1 class="paramname">AMPLIFER ENVELOPE</h1>
         <div class="parameter">
 	        <div class="slider-wrap">
-		        <div class="prog-bar attack"></div>
+		        <div class="slider-bar attack"></div>
           </div>
           <h1>ATTACK</h1>
         </div>
         <div class="parameter">
 	        <div class="slider-wrap">
-		        <div class="prog-bar decay"></div>
+		        <div class="slider-bar decay"></div>
           </div>
           <h1>DECAY</h1>
         </div>
         <div class="parameter">
 	        <div class="slider-wrap">
-		        <div class="prog-bar sustain"></div>
+		        <div class="slider-bar sustain"></div>
           </div>
           <h1>SUSTAIN</h1>
         </div>
         <div class="parameter">
 	        <div class="slider-wrap">
-		        <div class="prog-bar release"></div>
+		        <div class="slider-bar release"></div>
           </div>
           <h1>RELEASE</h1>
         </div>
@@ -94,25 +99,25 @@
         <h1 class="paramname">FILTER ENVELOPE</h1>
         <div class="parameter">
 	        <div class="slider-wrap">
-		        <div class="prog-bar attack"></div>
+		        <div class="slider-bar f-attack"></div>
           </div>
           <h1>ATTACK</h1>
         </div>
         <div class="parameter">
 	        <div class="slider-wrap">
-		        <div class="prog-bar decay"></div>
+		        <div class="slider-bar f-decay"></div>
           </div>
           <h1>DECAY</h1>
         </div>
         <div class="parameter">
 	        <div class="slider-wrap">
-		        <div class="prog-bar sustain"></div>
+		        <div class="slider-bar f-sustain"></div>
           </div>
           <h1>SUSTAIN</h1>
         </div>
         <div class="parameter">
 	        <div class="slider-wrap">
-		        <div class="prog-bar release"></div>
+		        <div class="slider-bar f-release"></div>
           </div>
           <h1>RELEASE</h1>
         </div>
@@ -158,5 +163,8 @@
 
 
     </div>
+<button class="alert" type="button" name="button">HELLO</button>
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>
