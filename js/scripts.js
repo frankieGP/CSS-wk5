@@ -1,16 +1,27 @@
 $( document ).ready(function() {
+  $(".osc1").animate({left: '650px'});
 
-  $('.spinner-wrap').click(function() {
+  $("#analog-bass").click(function() {
+
+
+
 
     var $this = $(this),
-        audio = $this.siblings('audio')[0];
+        audio = $this.children('audio')[0];
         audio.play();
 
 
-
-
-
-
   });
+
+
+  $("#digital-bass").click(function() {
+
+    var $this = $(this),
+        audio = $this.children('audio')[0];
+        audio.play();
+      });
+
+
+
 
 });

@@ -1,0 +1,11 @@
+.nav {
+  display: flex;
+  justify-content: center;
+}
+
+
+.sound {
+  @include size(100px);
+  background-color: blue;
+  margin: 10px;
+}

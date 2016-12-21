@@ -6,23 +6,30 @@
   </head>
   <body>
 
+   <div class="nav">
+     <h1>Select a Sound</h1>
+
+     <div class="sound" id="analog-bass">
+       <audio loop="loop">
+         <source src="sounds/bass3.mp3" type="audio/mp3"/>
+       </audio>
+     </div>
+
+     <div class="sound" id="digital-bass">
+       <audio loop="loop">
+         <source src="sounds/bass2.mp3" type="audio/mp3"/>
+       </audio>
+     </div>
+
+   </div>
+
+
+
 
 
     <div class="container">
 
-      <article class="player">
 
-      <div class="spinner-wrap">
-        <div class="spinner-outer"></div>
-        <div class="spinner-center"></div>
-        <div class="play-sprite"></div>
-      </div>
-
-      <audio loop="loop" data-bpm="86">
-        <source src="sounds/bass2.mp3" type="audio/mp3"/>
-      </audio>
-
-    </article>
       <div class="knobs">
         <h1 class="paramname">OSCILLATORS</h1>
         <div class="parameter">

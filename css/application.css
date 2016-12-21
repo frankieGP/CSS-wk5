@@ -13,11 +13,6 @@ body {
 h1 {
   text-align: center; }
 
-.spinner-wrap{
-  width: 100px;
-  height: 100px;
-  background-color:blue;
-}
 .paramname {
   margin: 40px;
   letter-spacing: 0.5em; }
@@ -79,15 +74,8 @@ h1 {
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-left: -15px;
-  -webkit-transform-origin: top center;
-  -webkit-animation: spin-osc1 2s linear forwards; }
+  margin-left: -15px; }
 
-@-webkit-keyframes spin-osc1 {
-  0% {
-    -webkit-transform: rotate(50deg); }
-  100% {
-    -webkit-transform: rotate(300deg); } }
 .osc2:after {
   width: 30px;
   height: 120px;
@@ -305,5 +293,15 @@ h1 {
 
 .parameter {
   margin: 10px 40px 10px 40px; }
+
+.nav {
+  display: flex;
+  justify-content: center; }
+
+.sound {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  margin: 10px; }
 
 /*# sourceMappingURL=application.css.map */
