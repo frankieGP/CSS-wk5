@@ -1,0 +1,153 @@
+.knob::after, .knob::before {
+  content: "";
+  display: block;
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+}
+////////////////////////  OSCILLATOR KNOBS  /////////////////////////////////
+
+.osc1:after {
+  width: 30px;
+  height: 100px;
+  background: #eee;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  -webkit-transform-origin: top center;
+  -webkit-animation: spin-osc1 2s linear infinite;
+}
+@-webkit-keyframes spin-osc1{
+  0% {
+    -webkit-transform: rotate(50deg);
+  }
+  100% {
+    -webkit-transform: rotate(300deg);
+  }
+}
+
+.osc2:after {
+  width: 30px;
+  height: 100px;
+  background: #eee;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  -webkit-transform-origin: top center;
+  -webkit-animation: spin2 2s linear infinite;
+}
+@-webkit-keyframes spin2 {
+  0% {
+    -webkit-transform: rotate(50deg);
+  }
+  100% {
+    -webkit-transform: rotate(220deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+////////////////////////  FILTER KNOBS  /////////////////////////////////
+
+.frequency:after {
+  width: 30px;
+  height: 100px;
+  background: #eee;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  -webkit-transform-origin: top center;
+  -webkit-animation: spin-frequency 2s linear infinite;
+}
+@-webkit-keyframes spin-frequency{
+  0% {
+    -webkit-transform: rotate(50deg);
+  }
+  100% {
+    -webkit-transform: rotate(150deg);
+  }
+}
+
+.resonance:after {
+  width: 30px;
+  height: 100px;
+  background: #eee;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  -webkit-transform-origin: top center;
+  -webkit-animation: spin-resonance 2s linear infinite;
+}
+@-webkit-keyframes spin-resonance{
+  0% {
+    -webkit-transform: rotate(50deg);
+  }
+  100% {
+    -webkit-transform: rotate(190deg);
+  }
+}
+
+
+
+
+
+
+
+////////////////////////  LFO KNOBS  /////////////////////////////////
+
+
+.amount:after {
+  width: 30px;
+  height: 100px;
+  background: #eee;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  -webkit-transform-origin: top center;
+  -webkit-animation: spin-amount 2s linear infinite;
+}
+@-webkit-keyframes spin-amount{
+  0% {
+    -webkit-transform: rotate(50deg);
+  }
+  100% {
+    -webkit-transform: rotate(150deg);
+  }
+}
+
+.rate:after {
+  width: 30px;
+  height: 100px;
+  background: #eee;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+  -webkit-transform-origin: top center;
+  -webkit-animation: spin-rate 2s linear infinite;
+}
+@-webkit-keyframes spin-rate{
+  0% {
+    -webkit-transform: rotate(50deg);
+  }
+  100% {
+    -webkit-transform: rotate(270deg);
+  }
+}
