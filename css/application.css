@@ -142,6 +142,7 @@ em {
   border: 5px solid #FF69B4; }
 
 .sliders {
+  max-width: 45%;
   display: flex;
   flex-direction: row;
   margin: 40px;
@@ -291,9 +292,9 @@ em {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
-  align-content: center;
+  align-content: space-around;
   align-items: center;
   width: 90vw;
   margin: auto; }
@@ -383,7 +384,27 @@ em {
   margin-left: 15px;
   -webkit-animation: textappear 1s 0.5s forwards; }
 
+.amp:hover .what-do-amp {
+  display: block; }
+
 .amp-env:hover .paramname {
+  border-bottom: 1px solid white; }
+
+.what-do-filter {
+  line-height: 0.8em;
+  display: none;
+  opacity: 0; }
+
+.filter-env:hover .what-do-filter {
+  font-size: 3em;
+  display: block;
+  margin-left: 15px;
+  -webkit-animation: textappear 1s 0.5s forwards; }
+
+.filter:hover .what-do-filter {
+  display: block; }
+
+.filter-env:hover .paramname {
   border-bottom: 1px solid white; }
 
 #lfo {
@@ -425,6 +446,9 @@ em {
   line-height: 0.8em;
   display: none;
   opacity: 0; }
+
+#lfo:hover .what-do-lfo {
+  display: block; }
 
 #filter:hover .paramname {
   border-bottom: 1px solid white; }

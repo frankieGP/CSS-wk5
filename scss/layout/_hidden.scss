@@ -50,6 +50,49 @@
   margin-left: 15px;
   -webkit-animation: textappear 1s 0.5s forwards;
 }
+.amp:hover .what-do-amp {
+  display:block;
+}
+.amp-env:hover .paramname{
+border-bottom: 1px solid white;
+}
+// #filter {
+//   width: 1261px;
+//   height: 521px;
+// }
+//
+// #filter:hover {
+//   width: 1619px;
+//   height: 840px;
+//   -webkit-transition: width 0.5s linear, height 0.5s linear,
+//
+// }
+
+
+
+
+
+
+
+
+.what-do-filter {
+  line-height: 0.8em;
+  display: none;
+  opacity: 0;
+}
+
+.filter-env:hover .what-do-filter{
+font-size: 3em;
+display: block;
+margin-left: 15px;
+-webkit-animation: textappear 1s 0.5s forwards;
+}
+.filter:hover .what-do-filter {
+  display:block;
+}
+.filter-env:hover .paramname{
+border-bottom: 1px solid white;
+}
 
 // #filter {
 //   width: 1261px;
@@ -64,9 +107,7 @@
 // }
 
 
-.amp-env:hover .paramname{
-  border-bottom: 1px solid white;
-}
+
 
 
 
@@ -120,7 +161,9 @@
   display: none;
   opacity: 0;
 }
-
+#lfo:hover .what-do-lfo {
+    display:block;
+}
 #filter:hover .paramname{
   border-bottom: 1px solid white;
 }
