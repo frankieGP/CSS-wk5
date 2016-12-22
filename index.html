@@ -39,8 +39,14 @@
 
     <div class="container">
 
-      <div class="knobs">
-        <h1 class="paramname">OSCILLATORS</h1>
+      <div class="knobs" id="osc">
+        <div class="info">
+          <h1 class="paramname">OSCILLATORS</h1>
+          <div class="what-do-osc">
+            <p>Oscillators produce sound</p><p>which is then fed through</p><p>the rest of the signal path</p><p>in the synthesizer.</p><p>Oscillation itself is the production of</p><p>a certain type of waveform,</p><p>which produces a different sound.</p>
+          </div>
+        </div>
+
         <div class="parameter">
           <div class="knob-wrap">
             <div class="knob"></div>
@@ -65,9 +71,17 @@
           </div>
           <h1>OSC 2</h1>
         </div>
+
       </div>
-      <div class="knobs">
-        <h1 class="paramname">FILTER</h1>
+
+
+      <div class="knobs" id="filter">
+        <div class="info">
+          <h1 class="paramname">FILTER</h1>
+          <div class="what-do-filter">
+            <p>A filter passes signals with</p><p>a frequency lower than</p><p>the cutoff frequency</p><p>and attenuates signals with frequencies</p><p>higher than the cutoff frequency.</p>
+          </div>
+        </div>
         <div class="parameter">
           <div class="knob-wrap">
             <div class="knob"></div>
@@ -82,7 +96,9 @@
           </div>
           <h1>RESONANCE</h1>
         </div>
+
       </div>
+
 
       <div class="sliders amp-env">
         <h1 class="paramname">AMPLIFER ENVELOPE</h1>
@@ -140,8 +156,13 @@
         </div>
       </div>
 
-      <div class="knobs">
-        <h1 class="paramname">LFO</h1>
+      <div class="knobs" id="lfo">
+        <div class="info">
+          <h1 class="paramname">LFO</h1>
+          <div class="what-do-lfo">
+            <p>Low Frequency Oscillation</p><p>is a rhythmic  pulse</p><p>used to modulate synthesizers.</p>
+          </div>
+      </div>
         <div class"shape">
             <div class="lfo-waveforms">
               <div class="triangle"></div>
