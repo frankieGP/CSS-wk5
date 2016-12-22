@@ -1,8 +1,25 @@
+$(document).ready(function() {
+   			$('.stop').hide();
+
+        $('.play').click(function() {
+            $(this).hide();
+            $(this).next('.stop').show();  $(this).closest('div').find('audio[id^="audio"]').get(0).play();
+        });
+
+
+        $('.stop').click(function() {
+            $(this).prev('.play').show();
+            $(this).hide();
+        	  $(this).closest('div').find('audio[id^="audio"]').get(0).pause();
+        });
+
+
+
+
+
+
 
   $("#analog-bass").on('click', function() {
-    var $this = $(this),
-      audio = $this.children('audio')[0];
-      audio.play();
 
 
 
@@ -51,9 +68,7 @@
 
 
   $("#digital-bass").on('click',function() {
-    var $this = $(this),
-        audio = $this.children('audio')[0];
-        audio.play();
+
 
 
         $( ".osc1-tail" ).addClass( "osc1-digital", 1000 );
@@ -93,3 +108,9 @@
         $( ".slider-FR" ).removeClass( "f-release-bass", 1000 );
 
       });
+    });
+
+
+    // var $this = $(this),
+    //     audio = $this.children('audio')[0];
+    //     audio.play();
