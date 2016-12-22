@@ -3,7 +3,6 @@
     var $this = $(this),
       audio = $this.children('audio')[0];
       audio.play();
-      audio.pause();
 
 
 
@@ -25,22 +24,22 @@
       $( ".slider-FR" ).addClass( "f-release-bass", 1000 );
 
 
-      // $( ".osc1-tail" ).removeClass( "osc1-digital", 1000 );
-      // $( ".osc2-tail" ).removeClass( "osc2-digital", 1000 );
-      // $( ".freq-tail" ).removeClass( "freq-digital", 1000 );
-      // $( ".res-tail" ).removeClass( "res-digital", 1000 );
-      // $( ".amount-tail" ).removeClass( "amount-digital", 1000 );
-      // $( ".rate-tail" ).removeClass( "rate-digital", 1000 );
-      //
-      // $( ".slider-AA" ).removeClass( "a-attack-digital", 1000 );
-      // $( ".slider-AD" ).removeClass( "a-decay-digital", 1000 );
-      // $( ".slider-AS" ).removeClass( "a-sustain-digital", 1000 );
-      // $( ".slider-AR" ).removeClass( "a-release-digital", 1000 );
-      //
-      // $( ".slider-FA" ).removeClass( "f-attack-digital", 1000 );
-      // $( ".slider-FD" ).removeClass( "f-decay-digital", 1000 );
-      // $( ".slider-FS" ).removeClass( "f-sustain-digital", 1000 );
-      // $( ".slider-FR" ).removeClass( "f-release-digital", 1000 );
+      $( ".osc1-tail" ).removeClass( "osc1-digital", 1000 );
+      $( ".osc2-tail" ).removeClass( "osc2-digital", 1000 );
+      $( ".freq-tail" ).removeClass( "freq-digital", 1000 );
+      $( ".res-tail" ).removeClass( "res-digital", 1000 );
+      $( ".amount-tail" ).removeClass( "amount-digital", 1000 );
+      $( ".rate-tail" ).removeClass( "rate-digital", 1000 );
+
+      $( ".slider-AA" ).removeClass( "a-attack-digital", 1000 );
+      $( ".slider-AD" ).removeClass( "a-decay-digital", 1000 );
+      $( ".slider-AS" ).removeClass( "a-sustain-digital", 1000 );
+      $( ".slider-AR" ).removeClass( "a-release-digital", 1000 );
+
+      $( ".slider-FA" ).removeClass( "f-attack-digital", 1000 );
+      $( ".slider-FD" ).removeClass( "f-decay-digital", 1000 );
+      $( ".slider-FS" ).removeClass( "f-sustain-digital", 1000 );
+      $( ".slider-FR" ).removeClass( "f-release-digital", 1000 );
 
 
 
