@@ -337,4 +337,84 @@ h2 {
   background: -webkit-repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(red, yellow);
   box-shadow: 0px 27px 15px -6px rgba(0, 0, 0, 0.4); }
 
+@-webkit-keyframes textappear {
+  0% {
+    opacity: 0; }
+  0% {
+    opacity: 0.5; }
+  100% {
+    opacity: 1; } }
+#osc {
+  height: 624px; }
+
+#osc:hover {
+  height: 919px;
+  -webkit-transition: width 0.5s linear, height 0.5s linear; }
+
+.what-do-osc {
+  line-height: 0.8em;
+  display: none;
+  opacity: 0; }
+
+#osc:hover .what-do-osc {
+  display: block; }
+
+#osc:hover .paramname {
+  border-bottom: 1px solid white; }
+
+#osc:hover .what-do-osc {
+  font-size: 3em;
+  display: block;
+  margin-left: 15px;
+  -webkit-animation: textappear 1s 0.5s forwards; }
+
+#lfo {
+  width: 1120px;
+  height: 524px; }
+
+#lfo:hover {
+  width: 1531px;
+  height: 600px;
+  -webkit-transition: width 0.5s linear, height 0.5s linear; }
+
+.what-do-lfo {
+  line-height: 0.8em;
+  display: none;
+  opacity: 0; }
+
+#lfo:hover .what-do-lfo {
+  display: block; }
+
+#lfo:hover .paramname {
+  border-bottom: 1px solid white; }
+
+#lfo:hover .what-do-lfo {
+  font-size: 3em;
+  display: block;
+  margin-left: 15px;
+  -webkit-animation: textappear 1s 0.5s forwards; }
+
+#filter {
+  width: 1261px;
+  height: 521px; }
+
+#filter:hover {
+  width: 1619px;
+  height: 840px;
+  -webkit-transition: width 0.5s linear, height 0.5s linear; }
+
+.what-do-filter {
+  line-height: 0.8em;
+  display: none;
+  opacity: 0; }
+
+#filter:hover .paramname {
+  border-bottom: 1px solid white; }
+
+#filter:hover .what-do-filter {
+  font-size: 3em;
+  display: block;
+  margin-left: 15px;
+  -webkit-animation: textappear 1s 0.5s forwards; }
+
 /*# sourceMappingURL=application.css.map */
