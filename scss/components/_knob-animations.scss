@@ -1,54 +1,50 @@
 
 ////////////////////////  OSCILLATOR KNOBS  /////////////////////////////////
 
-.osc1-tail {
-  @extend %knob-tail;
-}
-.move {
+
+.osc1-bass {
   -webkit-transform: rotate(99deg);
+  @extend %knob-ani;
+}
+.osc1-digital {
+  -webkit-transform: rotate(299deg);
   @extend %knob-ani;
 }
 
 
-.osc2-tail {
-  @extend %knob-tail;
-}
-  .move2 {
-    -webkit-transform: rotate(99deg);
+
+.osc2-bass {
+    -webkit-transform: rotate(199deg);
     @extend %knob-ani;
 }
-
+.osc2-digital {
+  -webkit-transform: rotate(59deg);
+  @extend %knob-ani;
+}
 
 ////////////////////////  FILTER KNOBS  /////////////////////////////////
 
-.freq-tail {
-  @extend %knob-tail;
 
-  -webkit-transform-origin: top center;
-  -webkit-animation: spin-frequency 2s linear forwards;
+.freq-bass {
+  -webkit-transform: rotate(50deg);
+  @extend %knob-ani;
 }
-@-webkit-keyframes spin-frequency{
-  0% {
-    -webkit-transform: rotate(50deg);
-  }
-  100% {
-    -webkit-transform: rotate(150deg);
-  }
+.freq-digital {
+  -webkit-transform: rotate(50deg);
+  @extend %knob-ani;
 }
+
 
 .res-tail {
   @extend %knob-tail;
-
-  -webkit-transform-origin: top center;
-  -webkit-animation: spin-resonance 2s linear forwards;
 }
-@-webkit-keyframes spin-resonance{
-  0% {
-    -webkit-transform: rotate(50deg);
-  }
-  100% {
-    -webkit-transform: rotate(190deg);
-  }
+.res-bass {
+  -webkit-transform: rotate(150deg);
+  @extend %knob-ani;
+}
+.res-digital {
+  -webkit-transform: rotate(150deg);
+  @extend %knob-ani;
 }
 
 
@@ -60,34 +56,24 @@
 ////////////////////////  LFO KNOBS  /////////////////////////////////
 
 
-.amount-tail {
-  @extend %knob-tail;
-
-  -webkit-transform-origin: top center;
-  -webkit-animation: spin-amount 2s linear forwards;
+.amount-bass {
+  -webkit-transform: rotate(150deg);
+  @extend %knob-ani;
 }
-@-webkit-keyframes spin-amount{
-  0% {
-    -webkit-transform: rotate(50deg);
-  }
-  100% {
-    -webkit-transform: rotate(150deg);
-  }
+.amount-digital {
+  -webkit-transform: rotate(150deg);
+  @extend %knob-ani;
 }
 
-.rate-tail {
-  @extend %knob-tail;
 
-  -webkit-transform-origin: top center;
-  -webkit-animation: spin-rate 2s linear forwards;
+
+.rate-bass {
+  -webkit-transform: rotate(150deg);
+  @extend %knob-ani;
 }
-@-webkit-keyframes spin-rate{
-  0% {
-    -webkit-transform: rotate(50deg);
-  }
-  100% {
-    -webkit-transform: rotate(270deg);
-  }
+.rate-digital {
+  -webkit-transform: rotate(150deg);
+  @extend %knob-ani;
 }
 
 

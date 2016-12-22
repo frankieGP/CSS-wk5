@@ -1,63 +1,124 @@
 
 ////////////////////////  AMP ENVELOPE SLIDERS  /////////////////////////////////
 
-.attack {
-  -webkit-animation: slide-attack 4s forwards;
+.a-attack-bass {
+  -webkit-animation: a-attack-bass 4s forwards;
 }
-.decay {
-  -webkit-animation: slide-decay 4s forwards;
-}
-.sustain {
-  -webkit-animation: slide-sustain 4s forwards;
-}
-.release {
-  -webkit-animation: slide-release 4s forwards;
-}
-@-webkit-keyframes slide-attack {
+@-webkit-keyframes a-attack-bass {
   0% {height: 0%;}
   100% {height: 30%;}
 }
-@-webkit-keyframes slide-decay {
-  0% {height: 0%;}
-  100% {height: 50%;}
+.a-decay-bass {
+  -webkit-animation: a-decay-bass 4s forwards;
 }
-@-webkit-keyframes slide-sustain {
+@-webkit-keyframes a-decay-bass {
+  0% {height: 0%;}
+  100% {height: 25%;}
+}
+.a-sustain-bass {
+  -webkit-animation: a-sustain-bass 4s forwards;
+}
+@-webkit-keyframes a-sustain-bass {
   0% {height: 0%;}
   100% {height: 80%;}
 }
-@-webkit-keyframes slide-release {
+.a-release-bass {
+  -webkit-animation: a-release-bass 4s forwards;
+}
+@-webkit-keyframes a-release-bass {
   0% {height: 0%;}
-  100% {height: 40%;}
+  100% {height: 10%;}
 }
 
 
 ////////////////////////  FILTER ENVELOPE SLIDERS  /////////////////////////////////
+.f-attack-bass {
+  -webkit-animation: f-attack-bass 4s forwards;
+}
+@-webkit-keyframes f-attack-bass {
+  0% {height: 0%;}
+  100% {height: 60%;}
+}
+.f-decay-bass {
+  -webkit-animation: f-decay-bass 4s forwards;
+}
+@-webkit-keyframes f-decay-bass {
+  0% {height: 0%;}
+  100% {height: 45%;}
+}
+.f-sustain-bass {
+  -webkit-animation: f-sustain-bass 4s forwards;
+}
+@-webkit-keyframes f-sustain-bass {
+  0% {height: 0%;}
+  100% {height: 50%;}
+}
+.f-release-bass {
+  -webkit-animation: f-release-bass 4s forwards;
+}
+@-webkit-keyframes f-release-bass {
+  0% {height: 0%;}
+  100% {height: 19%;}
+}
 
-.f-attack {
-  -webkit-animation: slide-f-attack 4s forwards;
+/////////DIGITAL/////
+
+.a-attack-digital {
+  -webkit-animation: a-attack-digital 4s forwards;
 }
-.f-decay {
-  -webkit-animation: slide-f-decay 4s forwards;
-}
-.f-sustain {
-  -webkit-animation: slide-f-sustain 4s forwards;
-}
-.f-release {
-  -webkit-animation: slide-f-release 4s forwards;
-}
-@-webkit-keyframes slide-f-attack {
+@-webkit-keyframes a-attack-digital {
   0% {height: 0%;}
-  100% {height: 50%;}
+  100% {height: 20%;}
 }
-@-webkit-keyframes slide-f-decay {
-  0% {height: 0%;}
-  100% {height: 70%;}
+.a-decay-digital {
+  -webkit-animation: a-decay-digital 4s forwards;
 }
-@-webkit-keyframes slide-f-sustain {
+@-webkit-keyframes a-decay-digital {
   0% {height: 0%;}
-  100% {height: 10%;}
+  100% {height: 35%;}
 }
-@-webkit-keyframes slide-f-release {
+.a-sustain-digital {
+  -webkit-animation: a-sustain-digital 4s forwards;
+}
+@-webkit-keyframes a-sustain-digital {
   0% {height: 0%;}
-  100% {height: 50%;}
+  100% {height: 59%;}
+}
+.a-release-digital {
+  -webkit-animation: a-release-digital 4s forwards;
+}
+@-webkit-keyframes a-release-digital {
+  0% {height: 0%;}
+  100% {height: 80%;}
+}
+
+
+////////////////////////  FILTER ENVELOPE SLIDERS  /////////////////////////////////
+.f-attack-digital {
+  -webkit-animation: f-attack-digital 4s forwards;
+}
+@-webkit-keyframes f-attack-digital {
+  0% {height: 0%;}
+  100% {height: 90%;}
+}
+.f-decay-digital {
+  -webkit-animation: f-decay-digital 4s forwards;
+}
+@-webkit-keyframes f-decay-digital {
+  0% {height: 0%;}
+  100% {height: 35%;}
+}
+.f-sustain-digital {
+  -webkit-animation: f-sustain-digital 4s forwards;
+}
+@-webkit-keyframes f-sustain-digital {
+  0% {height: 0%;}
+  100% {height: 20%;}
+}
+.f-release-digital {
+  -webkit-animation: f-release-digital 4s forwards;
+}
+@-webkit-keyframes f-release-digital {
+  0% {height: 0%;}
+  100% {height: 79%;}
 }

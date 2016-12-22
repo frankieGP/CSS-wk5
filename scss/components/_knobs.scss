@@ -33,3 +33,6 @@
   background: -webkit-repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(#63D0FF, #45fe16);
    border: 5px solid #FF69B4;
 }
+.osc1-tail, .osc2-tail, .freq-tail, .rate-tail, .amount-tail {
+  @extend %knob-tail;
+}

@@ -14,3 +14,18 @@
   left: 50%;
   margin-left: -15px;
 }
+
+
+
+%slider-ani {
+  -webkit-animation: slide-f-attack 4s forwards;
+}
+
+
+%slider-bar {
+	height: 0px;
+  width: 60px;
+	border-radius: 5px;
+  border: 1px solid #FF69B4;
+	background: repeating-linear-gradient(-45deg, rgba(255,255,255,.1), rgba(255,255,255,0) 12px), linear-gradient(#63D0FF, #45fe16);
+}
