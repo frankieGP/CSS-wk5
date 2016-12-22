@@ -3,3 +3,14 @@
   -webkit-transition: transform 2s;
   -webkit-transition-timing-function: linear;
 }
+
+%knob-tail {
+  width: 30px;
+  height: 120px;
+  background: #eee;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px;
+}

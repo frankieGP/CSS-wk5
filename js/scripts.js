@@ -1,37 +1,22 @@
-$( document ).ready(function() {
+$("#analog-bass").on('click', function() {
+  var $this = $(this),
+      audio = $this.children('audio')[0];
+      audio.play();
 
-  $('[class*="osc1-tail"]').on('click',function() {
 
-  $(this).addClass("move");
-  if($(this).hasClass("move")){
-  return;
-  }
-  $(this).addClass("move");
-  var that = this;
-  setTimeout(function(){
-  $(that).removeClass('move');
-},7250);
+
 });
-
-
-  $("#analog-bass").click(function() {
-    var $this = $(this),
-        audio = $this.children('audio')[0];
-        audio.play();
-
-
-
+$( function() {
+  $( "#analog-bass" ).on( "click", function() {
+    $( ".osc1-tail" ).addClass( "move", 1000 );
+  });
   });
 
 
-  $("#digital-bass").click(function() {
+
+  $("#digital-bass").on('click',function() {
 
     var $this = $(this),
         audio = $this.children('audio')[0];
         audio.play();
       });
-
-
-
-
-});

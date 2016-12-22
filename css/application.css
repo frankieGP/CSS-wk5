@@ -59,53 +59,13 @@ h1 {
   border-right: 25px solid transparent;
   border-bottom: 50px solid #FF69B4; }
 
-.knob::after, .knob::before {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 2px;
-  border-radius: 50%; }
-
-.osc1-tail {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
-  z-index: 50px; }
-
 .move {
-  -webkit-transform: rotate(199deg); }
+  -webkit-transform: rotate(99deg); }
 
-.osc2-tail {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
-  -webkit-transform-origin: top center;
-  -webkit-animation: spin2 2s linear forwards; }
+.move2 {
+  -webkit-transform: rotate(99deg); }
 
-@-webkit-keyframes spin2 {
-  0% {
-    -webkit-transform: rotate(50deg); }
-  100% {
-    -webkit-transform: rotate(220deg); } }
-.frequency:after {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
+.freq-tail {
   -webkit-transform-origin: top center;
   -webkit-animation: spin-frequency 2s linear forwards; }
 
@@ -114,15 +74,7 @@ h1 {
     -webkit-transform: rotate(50deg); }
   100% {
     -webkit-transform: rotate(150deg); } }
-.resonance:after {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
+.res-tail {
   -webkit-transform-origin: top center;
   -webkit-animation: spin-resonance 2s linear forwards; }
 
@@ -131,15 +83,7 @@ h1 {
     -webkit-transform: rotate(50deg); }
   100% {
     -webkit-transform: rotate(190deg); } }
-.amount:after {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
+.amount-tail {
   -webkit-transform-origin: top center;
   -webkit-animation: spin-amount 2s linear forwards; }
 
@@ -148,15 +92,7 @@ h1 {
     -webkit-transform: rotate(50deg); }
   100% {
     -webkit-transform: rotate(150deg); } }
-.rate:after {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
+.rate-tail {
   -webkit-transform-origin: top center;
   -webkit-animation: spin-rate 2s linear forwards; }
 
@@ -298,10 +234,20 @@ h1 {
 .parameter {
   margin: 10px 40px 10px 40px; }
 
-.move {
+.move, .move2 {
   -webkit-transform-origin: top center;
   -webkit-transition: transform 2s;
   -webkit-transition-timing-function: linear; }
+
+.osc1-tail, .osc2-tail, .freq-tail, .res-tail, .amount-tail, .rate-tail {
+  width: 30px;
+  height: 120px;
+  background: #eee;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -15px; }
 
 .nav {
   display: flex;

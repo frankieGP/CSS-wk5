@@ -1,74 +1,29 @@
-.knob::after, .knob::before {
-  content: "";
-  display: block;
-  width: 2px;
-  height: 2px;
-  border-radius: 50%;
-}
+
 ////////////////////////  OSCILLATOR KNOBS  /////////////////////////////////
 
 .osc1-tail {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
-  z-index: 50px;
+  @extend %knob-tail;
 }
 .move {
-  -webkit-transform: rotate(199deg);
+  -webkit-transform: rotate(99deg);
   @extend %knob-ani;
-  // -webkit-transform-origin: top center;
-  // -webkit-transition: transform 2s;
-  // -webkit-transition-timing-function: linear;
-
-
 }
 
 
 .osc2-tail {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
-  -webkit-transform-origin: top center;
-  -webkit-animation: spin2 2s linear forwards;
+  @extend %knob-tail;
 }
-@-webkit-keyframes spin2 {
-  0% {
-    -webkit-transform: rotate(50deg);
-  }
-  100% {
-    -webkit-transform: rotate(220deg);
-  }
+  .move2 {
+    -webkit-transform: rotate(99deg);
+    @extend %knob-ani;
 }
-
-
-
-
-
-
-
 
 
 ////////////////////////  FILTER KNOBS  /////////////////////////////////
 
-.frequency:after {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
+.freq-tail {
+  @extend %knob-tail;
+
   -webkit-transform-origin: top center;
   -webkit-animation: spin-frequency 2s linear forwards;
 }
@@ -81,15 +36,9 @@
   }
 }
 
-.resonance:after {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
+.res-tail {
+  @extend %knob-tail;
+
   -webkit-transform-origin: top center;
   -webkit-animation: spin-resonance 2s linear forwards;
 }
@@ -111,15 +60,9 @@
 ////////////////////////  LFO KNOBS  /////////////////////////////////
 
 
-.amount:after {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
+.amount-tail {
+  @extend %knob-tail;
+
   -webkit-transform-origin: top center;
   -webkit-animation: spin-amount 2s linear forwards;
 }
@@ -132,15 +75,9 @@
   }
 }
 
-.rate:after {
-  width: 30px;
-  height: 120px;
-  background: #eee;
-  border-radius: 20px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-left: -15px;
+.rate-tail {
+  @extend %knob-tail;
+
   -webkit-transform-origin: top center;
   -webkit-animation: spin-rate 2s linear forwards;
 }
@@ -152,3 +89,20 @@
     -webkit-transform: rotate(270deg);
   }
 }
+
+
+
+
+
+
+
+
+
+
+// .knob::after, .knob::before {
+//   content: "";
+//   display: block;
+//   width: 2px;
+//   height: 2px;
+//   border-radius: 50%;
+// }
