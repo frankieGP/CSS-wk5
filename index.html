@@ -5,20 +5,22 @@
 	  <link rel="stylesheet" href="css/application.css">
   </head>
   <body>
+    <h1 id="header">Select a Sound</h1>
 
-   <div class="nav">
-     <h1>Select a Sound</h1>
+    <div class="nav">
 
-     <div class="sound" id="analog-bass">
-       <audio id="audio1" src="sounds/bass2.mp3"></audio>
-       <a class="play" onClick="analog-bass()">play</a>
-       <a class="stop">stop</a>
-     </div>
 
+      <h2>ANALOG BASS</h2>
+       <div class="sound" id="analog-bass">
+         <audio id="audio1" src="sounds/bass1.mp3"></audio>
+         <a class="play" onClick="analog-bass()">play</a>
+         <a class="stop">stop</a>
+       </div>
+     <h2>DIGITAL PAD</h2>
      <div class="sound" id="digital-bass">
-      <audio id="audio2" src="sounds/bass3.mp3"></audio>
-      <a class="play" onClick="digital-bass()">play</a>
-      <a class="stop">stop</a>
+        <audio id="audio2" src="sounds/pad.mp3"></audio>
+        <a class="play" onClick="digital-bass()">play</a>
+        <a class="stop">stop</a>
     </div>
 
 
@@ -37,14 +39,12 @@
 
     <div class="container">
 
-
       <div class="knobs">
         <h1 class="paramname">OSCILLATORS</h1>
         <div class="parameter">
           <div class="knob-wrap">
             <div class="knob"></div>
             <div class="osc1-tail"></div>
-
           </div>
           <div class="waveforms">
             <div class="triangle"></div>
@@ -57,7 +57,6 @@
           <div class="knob-wrap">
             <div class="knob"></div>
             <div class="osc2-tail"></div>
-
           </div>
           <div class="waveforms">
             <div class="triangle"></div>
@@ -67,7 +66,6 @@
           <h1>OSC 2</h1>
         </div>
       </div>
-
       <div class="knobs">
         <h1 class="paramname">FILTER</h1>
         <div class="parameter">
@@ -85,8 +83,6 @@
           <h1>RESONANCE</h1>
         </div>
       </div>
-
-
 
       <div class="sliders amp-env">
         <h1 class="paramname">AMPLIFER ENVELOPE</h1>
@@ -144,12 +140,6 @@
         </div>
       </div>
 
-
-
-
-
-
-
       <div class="knobs">
         <h1 class="paramname">LFO</h1>
         <div class"shape">
@@ -159,17 +149,12 @@
               <div class="saw"></div>
             </div>
           <h1>SHAPE</h1>
-
-
-          </div>
+        </div>
         <div class="parameter">
-
           <div class="knob-wrap">
-
             <div class="knob"></div>
             <div class="amount-tail"></div>
           </div>
-
           <h1>AMOUNT</h1>
         </div>
         <div class="parameter">
@@ -178,17 +163,11 @@
             <div class="rate-tail"></div>
           </div>
           <h1>RATE</h1>
-
         </div>
-
       </div>
 
-
-
     </div>
-<button class="alert" type="button" name="button">HELLO</button>
     <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
-    <!-- <script type="text/javascript" src="js/jquery.rotate.1-1.js"></script> -->
     <script type="text/javascript" src="js/scripts.js"></script>
   </body>
 </html>

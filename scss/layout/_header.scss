@@ -3,14 +3,18 @@
   justify-content: center;
 }
 
-
+#header{
+  font-size: 5.1em;
+}
 .sound {
-  @include size(100px);
+  @include size(200px);
   background-color: blue;
   margin: 10px;
-}
-.stop-sound {
-  @include size(100px);
-  background-color: red;
-  margin: 10px;
+  border-radius: 20px;
+
+  margin: 20px;
+  border: 1px solid white;
+    background: -webkit-repeating-linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 12px), -webkit-linear-gradient(red, yellow);
+  box-shadow: 0px 27px 15px -6px rgba(0, 0, 0, 0.4);
+
 }
