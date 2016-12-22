@@ -7,7 +7,7 @@
 }
 ////////////////////////  OSCILLATOR KNOBS  /////////////////////////////////
 
-.osc1:after {
+.osc1tail {
   width: 30px;
   height: 120px;
   background: #eee;
@@ -16,19 +16,20 @@
   top: 50%;
   left: 50%;
   margin-left: -15px;
-  // -webkit-transform-origin: top center;
-  // -webkit-animation: spin-osc1 2s linear forwards;
+  z-index: 50px;
+   -webkit-transform-origin: top center;
+   -webkit-animation: spin-osc1 2s linear forwards;
 
 
 }
-// @-webkit-keyframes spin-osc1{
-//   0% {
-//     -webkit-transform: rotate(50deg);
-//   }
-//   100% {
-//     -webkit-transform: rotate(300deg);
-//   }
-// }
+@-webkit-keyframes spin-osc1{
+  0% {
+    -webkit-transform: rotate(50deg);
+  }
+  100% {
+    -webkit-transform: rotate(300deg);
+  }
+}
 
 .osc2:after {
   width: 30px;
