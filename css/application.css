@@ -72,28 +72,28 @@ h1 {
   -webkit-transform: rotate(59deg); }
 
 .freq-bass {
-  -webkit-transform: rotate(50deg); }
+  -webkit-transform: rotate(90deg); }
 
 .freq-digital {
-  -webkit-transform: rotate(50deg); }
+  -webkit-transform: rotate(230deg); }
 
 .res-bass {
   -webkit-transform: rotate(150deg); }
 
 .res-digital {
-  -webkit-transform: rotate(150deg); }
+  -webkit-transform: rotate(100deg); }
 
 .amount-bass {
-  -webkit-transform: rotate(150deg); }
+  -webkit-transform: rotate(160deg); }
 
 .amount-digital {
-  -webkit-transform: rotate(150deg); }
+  -webkit-transform: rotate(50deg); }
 
 .rate-bass {
-  -webkit-transform: rotate(150deg); }
+  -webkit-transform: rotate(10deg); }
 
 .rate-digital {
-  -webkit-transform: rotate(150deg); }
+  -webkit-transform: rotate(275deg); }
 
 .knobs {
   display: flex;
@@ -315,6 +315,12 @@ h1 {
   height: 100px;
   width: 100px;
   background-color: blue;
+  margin: 10px; }
+
+.stop-sound {
+  height: 100px;
+  width: 100px;
+  background-color: red;
   margin: 10px; }
 
 /*# sourceMappingURL=application.css.map */

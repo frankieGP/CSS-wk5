@@ -9,3 +9,8 @@
   background-color: blue;
   margin: 10px;
 }
+.stop-sound {
+  @include size(100px);
+  background-color: red;
+  margin: 10px;
+}

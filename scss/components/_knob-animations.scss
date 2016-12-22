@@ -26,11 +26,11 @@
 
 
 .freq-bass {
-  -webkit-transform: rotate(50deg);
+  -webkit-transform: rotate(90deg);
   @extend %knob-ani;
 }
 .freq-digital {
-  -webkit-transform: rotate(50deg);
+  -webkit-transform: rotate(230deg);
   @extend %knob-ani;
 }
 
@@ -43,7 +43,7 @@
   @extend %knob-ani;
 }
 .res-digital {
-  -webkit-transform: rotate(150deg);
+  -webkit-transform: rotate(100deg);
   @extend %knob-ani;
 }
 
@@ -57,22 +57,22 @@
 
 
 .amount-bass {
-  -webkit-transform: rotate(150deg);
+  -webkit-transform: rotate(160deg);
   @extend %knob-ani;
 }
 .amount-digital {
-  -webkit-transform: rotate(150deg);
+  -webkit-transform: rotate(50deg);
   @extend %knob-ani;
 }
 
 
 
 .rate-bass {
-  -webkit-transform: rotate(150deg);
+  -webkit-transform: rotate(10deg);
   @extend %knob-ani;
 }
 .rate-digital {
-  -webkit-transform: rotate(150deg);
+  -webkit-transform: rotate(275deg);
   @extend %knob-ani;
 }
 

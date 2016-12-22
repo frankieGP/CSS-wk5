@@ -10,20 +10,16 @@ body {
   color: white;
 	background: #303030;
 	font: 1.1em sans-serif;
-
 }
-
-
 
 h1 {
   text-align: center;
 }
+
 .paramname {
   margin: 40px;
     letter-spacing: 0.5em;
-
 }
-
 
 .lfo-waveforms {
  display: flex;
@@ -38,24 +34,23 @@ h1 {
 }
 
 .waveforms {
-  	padding: 5px;
-
-    margin: 10px 40px 10px 40px;
-    border: 1px solid white;
+  padding: 5px;
+  margin: 10px 40px 10px 40px;
+  border: 1px solid white;
 	background: #222;
 	width: 200px;
 	border-radius: 10px;
-
   display: flex;
   justify-content: center;
 }
+
 .square {
   margin: 5px;
   height: 50px;
   width: 50px;
   background-color: #45fe16;
-
 }
+
 .saw {
   margin: 5px;
 	width: 0;
@@ -63,6 +58,7 @@ h1 {
 	border-bottom: 50px solid #63D0FF;
 	border-left: 50px solid transparent;
 }
+
 .triangle {
   margin: 5px;
 	width: 0;
