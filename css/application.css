@@ -66,7 +66,7 @@ h1 {
   height: 2px;
   border-radius: 50%; }
 
-.osc1tail {
+.osc1-tail {
   width: 30px;
   height: 120px;
   background: #eee;
@@ -75,16 +75,12 @@ h1 {
   top: 50%;
   left: 50%;
   margin-left: -15px;
-  z-index: 50px;
-  -webkit-transform-origin: top center;
-  -webkit-animation: spin-osc1 2s linear forwards; }
+  z-index: 50px; }
 
-@-webkit-keyframes spin-osc1 {
-  0% {
-    -webkit-transform: rotate(50deg); }
-  100% {
-    -webkit-transform: rotate(300deg); } }
-.osc2:after {
+.move {
+  -webkit-transform: rotate(199deg); }
+
+.osc2-tail {
   width: 30px;
   height: 120px;
   background: #eee;
@@ -301,6 +297,11 @@ h1 {
 
 .parameter {
   margin: 10px 40px 10px 40px; }
+
+.move {
+  -webkit-transform-origin: top center;
+  -webkit-transition: transform 2s;
+  -webkit-transition-timing-function: linear; }
 
 .nav {
   display: flex;

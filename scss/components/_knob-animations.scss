@@ -7,7 +7,7 @@
 }
 ////////////////////////  OSCILLATOR KNOBS  /////////////////////////////////
 
-.osc1tail {
+.osc1-tail {
   width: 30px;
   height: 120px;
   background: #eee;
@@ -17,21 +17,19 @@
   left: 50%;
   margin-left: -15px;
   z-index: 50px;
-   -webkit-transform-origin: top center;
-   -webkit-animation: spin-osc1 2s linear forwards;
+}
+.move {
+  -webkit-transform: rotate(199deg);
+  @extend %knob-ani;
+  // -webkit-transform-origin: top center;
+  // -webkit-transition: transform 2s;
+  // -webkit-transition-timing-function: linear;
 
 
 }
-@-webkit-keyframes spin-osc1{
-  0% {
-    -webkit-transform: rotate(50deg);
-  }
-  100% {
-    -webkit-transform: rotate(300deg);
-  }
-}
 
-.osc2:after {
+
+.osc2-tail {
   width: 30px;
   height: 120px;
   background: #eee;
